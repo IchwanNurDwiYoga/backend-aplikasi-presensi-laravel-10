@@ -1,0 +1,229 @@
+.field-wrapper {
+    position: relative;
+    margin-bottom: 1rem;
+    margin-top: .5rem;
+    min-width: 90px;
+}
+
+.field-wrapper .field-placeholder {
+    position: absolute;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #1273eb;
+    background: #ffffff;
+    border-radius: 30px;
+    font-size: .85rem;
+    font-weight: 600;
+    top: -12px;
+    left: 7px;
+    padding: 2px 7px;
+    z-index: 10;
+    text-align: left;
+}
+
+.form-text {
+    color: #9aa5af !important;
+    font-size: .8rem;
+}
+
+.form-control {
+    border: 1px solid #dbdaea;
+    border-radius: 2px;
+    color: #8a96a0;
+    font-size: .725rem;
+    min-height: 40px;
+}
+
+.form-control:hover {
+    border: 1px solid #1273eb;
+}
+
+.form-control:focus {
+    border-color: #1273eb;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 2px;
+    outline: auto !important;
+    outline-color: #1273eb !important;
+}
+
+.form-control:disabled,
+.form-control[readonly] {
+    background: #f8f8fb;
+    cursor: not-allowed;
+}
+
+.consulting-banner {
+    background: #1273eb;
+    border-radius: 4px;
+    margin: 10px 0 20px 0;
+    position: relative;
+    min-height: 161px;
+}
+
+.consulting-banner .consulting-banner-bg {
+    background-image: url(../img/consulting.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    right: 20px;
+    top: -40px;
+    width: 220px;
+    height: 220px;
+    z-index: 100;
+}
+
+.consulting-banner .consulting-body {
+    padding: 1.5rem 1.5rem 1rem 1.5rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 101;
+}
+
+.consulting-banner .consulting-body:before {
+    content: '';
+    background: url(../img/lines-bg.svg) no-repeat;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    right: -25px;
+    bottom: -25px;
+    width: 420px;
+    height: 150px;
+    opacity: .4;
+}
+
+.consulting-banner .consulting-content {
+    color: #ffffff;
+    padding: 1rem 0;
+}
+
+.consulting-banner .consulting-content h4 {
+    font-size: 1.4rem;
+    line-height: 180%;
+}
+
+.consulting-banner .consulting-content p {
+    font-size: .8rem;
+    opacity: .5;
+    line-height: 150%;
+}
+
+@media (max-width:576px) {
+    .consulting-banner {
+        margin: 30px 0 20px 0
+    }
+
+    .consulting-banner .consulting-body {
+        padding: 8.5rem 1.5rem 1rem 1.5rem
+    }
+}
+
+.btn.stripes-btn {
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .1) 50%, rgba(255, 255, 255, .1) 75%, transparent 75%, transparent) !important;
+    background-size: .3rem .3rem !important;
+}
+
+.btn {
+    border-radius: 2px;
+    border: 1px solid transparent;
+    font-size: .825rem;
+    font-weight: 400;
+    padding: .594rem 1.25rem;
+}
+
+.btn-info {
+    color: #ffffff;
+    background-color: #1273eb;
+    border-color: #1273eb;
+}
+
+.btn-info:hover {
+    color: #ffffff;
+    background-color: #1067d3;
+    border-color: #1067d3;
+}
+
+.btn-check:focus+.btn-info,
+.btn-info:focus {
+    color: #ffffff;
+    background-color: #1067d3;
+    border-color: #1067d3;
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 .2rem rgba(16, 103, 211, .35);
+    box-shadow: 0 0 0 .2rem rgba(16, 103, 211, .35);
+}
+
+.btn-info.dropdown-toggle.show,
+.btn-check:checked+.btn-info,
+.btn-check:active+.btn-info,
+.btn-info:active,
+.btn-info.active {
+    color: #ffffff;
+    background-color: #1067d3;
+    border-color: #1067d3;
+    -webkit-box-shadow: 0 0 0 .2rem rgba(16, 103, 211, .35);
+    box-shadow: 0 0 0 .2rem rgba(16, 103, 211, .35);
+}
+
+.btn-info.dropdown-toggle.show:focus,
+.btn-check:checked+.btn-info:focus,
+.btn-check:active+.btn-info:focus,
+.btn-info:active:focus,
+.btn-info.active:focus {
+    color: #ffffff;
+    background-color: #1067d3;
+    border-color: #1067d3;
+    -webkit-box-shadow: 0 0 0 .2rem rgba(16, 103, 211, .35);
+    box-shadow: 0 0 0 .2rem rgba(16, 103, 211, .35);
+}
+
+.btn-info:disabled,
+.btn-info.disabled,
+fieldset:disabled .btn-info {
+    pointer-events: none;
+    color: #ffffff;
+    background-color: #1067d3;
+    border-color: #1067d3;
+}
+
+.modal {
+    text-align: left;
+}
+
+.modal .modal-content {
+    border-radius: 3px;
+    border: 0;
+}
+
+.modal .modal-header {
+    background: #1273eb;
+    color: #ffffff;
+    border: 0;
+    border-radius: 3px 3px 0 0;
+}
+
+.modal .modal-body {
+    padding: 1.2rem;
+    max-height: calc(100vh - 180px);
+}
+
+.modal .modal-footer {
+    border-top: 1px solid #e1e8f3;
+    padding: .2rem .75rem;
+}
+
+.modal-backdrop.show {
+    opacity: .7;
+}
+
+.btn-close {
+    color: #ffffff;
+    text-shadow: 0 1px 0 #000000;
+    background: url(../img/cancel.svg) center/1em auto no-repeat;
+    margin-right: 0 !important;
+}
+
+.btn-close:hover {
+    color: #ffffff;
+}
